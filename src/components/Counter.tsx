@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Counter.css';
 
 interface Props {
   name: string;
@@ -14,7 +15,7 @@ interface Props {
 // }
 
 export default ({ name, count = 1 }: Props) => (
-  <div>
+  <div className="counter">
     Counter {name}: {count}
   </div>
 );
